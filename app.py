@@ -31,7 +31,7 @@ tradingview_widget = f"""
 <script type="text/javascript">
     new TradingView.widget({{
         "width": "100%",
-        "height": 610,
+        "height": 650,
         "symbol": "{symbol}",
         "interval": "D",
         "timezone": "Etc/UTC",
@@ -41,11 +41,20 @@ tradingview_widget = f"""
         "toolbar_bg": "#f1f3f6",
         "enable_publishing": false,
         "allow_symbol_change": true,
-        "studies": ["RSI@tv-basicstudies", "MACD@tv-basicstudies", "MAExp@tv-basicstudies", "MAExp@tv-basicstudies[1]"],
+        "studies": [
+            "RSI@tv-basicstudies",
+            "MACD@tv-basicstudies",
+            "MAExp@tv-basicstudies",
+            "MAExp@tv-basicstudies[1]",
+            "BB@tv-basicstudies",
+            "Supertrend@tv-basicstudies",
+            "MASimple@tv-basicstudies",
+            "MASimple@tv-basicstudies[1]"
+        ],
         "container_id": "tradingview_chart"
     }});
 </script>
 """
 
 # Display the TradingView widget in the Streamlit app
-components.html(tradingview_widget, height=650)
+components.html(tradingview_widget, height=700)
