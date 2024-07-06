@@ -41,6 +41,7 @@ tradingview_widget = f"""
         "toolbar_bg": "#f1f3f6",
         "enable_publishing": false,
         "allow_symbol_change": true,
+        "studies": ["RSI@tv-basicstudies", "MACD@tv-basicstudies", "MAExp@tv-basicstudies", "MAExp@tv-basicstudies[1]"],
         "container_id": "tradingview_chart"
     }});
 </script>
